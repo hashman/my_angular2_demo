@@ -36,7 +36,7 @@
         Outer: {{ search_text }}
         <app-search (search)="search_text = $event"></app-search>
 
-        <div [ngSwitch]="keyword">
+        <div [ngSwitch]="search_text">
           <div *ngSwitchCase="'1'">
             <!-- Calendar START -->
             <div class="widget calendar" id="widgete02e41df-35d8-4572-a862-0dd0fb2fa504">
