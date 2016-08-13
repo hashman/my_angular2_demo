@@ -7,7 +7,8 @@ import { HeaderComponent } from './header/header.component';
   styleUrls: ['app.component.css'],
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'The Will Will Web';
+  title_url = 'http://blog.miniasp.com/';
 
   keyword: string;
 
