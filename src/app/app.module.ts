@@ -8,6 +8,8 @@ import { SearchComponent } from './search/search.component';
 
 import { SearchService } from './search.service';
 
+import { HttpModule } from '@angular/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,8 @@ import { SearchService } from './search.service';
   imports: [
     BrowserModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
   providers: [SearchService],
   entryComponents: [AppComponent],
