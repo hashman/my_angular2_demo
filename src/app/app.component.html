@@ -33,8 +33,8 @@
     <!-- Aside START -->
     <aside class="col-md-4 sidebar-wrapper">
       <div id="widgetzone_be_WIDGET_ZONE" class="widgetzone">
-        Outer: {{ search_text }}
-        <app-search (search)="search_text = $event"></app-search>
+        Outer: {{ searchSvc.keyword }}
+        <app-search></app-search>
 
         <div [ngSwitch]="search_text">
           <div *ngSwitchCase="'1'">

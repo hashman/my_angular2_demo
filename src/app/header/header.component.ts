@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { SearchService } from '../search.service';
 
 @Component({
   selector: 'app-header',
@@ -13,7 +14,7 @@ export class HeaderComponent implements OnInit {
   sub_title = '記載著 Will 在網路世界的學習心得與技術分享';
   like_num = 10;
 
-  constructor() { }
+  constructor(private searchSvc: SearchService) { }
 
   ngOnInit() {
   }

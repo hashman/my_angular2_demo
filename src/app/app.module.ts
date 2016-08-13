@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 
+import { SearchService } from './search.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,7 @@ import { SearchComponent } from './search/search.component';
     CommonModule,
     FormsModule
   ],
-  providers: [],
+  providers: [SearchService],
   entryComponents: [AppComponent],
   bootstrap: [AppComponent]
 })
