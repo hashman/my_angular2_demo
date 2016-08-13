@@ -7,10 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Input()
-  title: string;
-  @Input()
-  title_url: string;
+  @Input() title: string;
+  @Input() title_url: string;
 
   sub_title = '記載著 Will 在網路世界的學習心得與技術分享';
   like_num = 10;
