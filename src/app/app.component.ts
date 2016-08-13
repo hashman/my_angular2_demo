@@ -14,4 +14,10 @@ export class AppComponent {
   doSearch(keywordInput) {
     this.keyword = keywordInput.value;
   }
+
+  doEnterSearch($event, keywordInput) {
+    if ($event.keyCode === 13) {
+      this.keyword = keywordInput.value;
+    }
+  }
 }
