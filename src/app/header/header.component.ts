@@ -26,4 +26,8 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  returnColor() {
+    return this.like_num%2 == 1 ? 'red' : 'yellow';
+  }
+
 }
