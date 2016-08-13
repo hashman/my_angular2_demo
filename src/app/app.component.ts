@@ -8,4 +8,10 @@ import { HeaderComponent } from './header/header.component';
 })
 export class AppComponent {
   title = 'app works!';
+
+  keyword: string;
+
+  doSearch(keywordInput) {
+    this.keyword = keywordInput.value;
+  }
 }
