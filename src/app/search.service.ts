@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { Http, Response } from '@angular/http';
 
 @Injectable()
 export class SearchService {
@@ -9,7 +9,7 @@ export class SearchService {
   constructor(private http: Http) {
     http.get('/api/articles.json')
       .subscribe(
-        (value) => {
+        (value: Response) => {
           this.data = value.json();
         }
       )
