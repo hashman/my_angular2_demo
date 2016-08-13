@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
+import { ArticleComponent } from './article/article.component';
 
 import { SearchService } from './search.service';
 
@@ -14,7 +15,8 @@ import { HttpModule } from '@angular/http';
   declarations: [
     AppComponent,
     HeaderComponent,
-    SearchComponent
+    SearchComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
